@@ -1,0 +1,27 @@
+javaScript + canvas实现常见排序算法可视化
+
+构造函数 ：SortView(array,parentNode,width,height,type,measure,speed,padding,arrowSize)；
+属性：
+array：待排序数组
+parentNode：要显示图像的标签对象
+with：图像宽度，可选，默认自适应
+height：图像高度，可选，默认值为320
+type：选择排序算法[0~5]对应 ["冒泡排序","选择排序","插入排序","归并排序","快速排序","堆排序"]，默认为0
+measure：纵坐标尺度（可选）默认为5
+speed：动画时延，可选，默认为0
+padding：坐标系的外边距，可选，默认自适应
+arrowSize：坐标系箭头大小，（可选）默认为5
+
+方法：
+init：初始化图像
+Drewing：绘制图像
+start：开始动画
+stop：暂停动画
+
+调用案例：
+var view = new SortView(arr,document.querySelector('#view'));
+view.init();
+view.strat();
+
+完成时间：2020/3/5
+制作人：薛望
